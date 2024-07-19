@@ -83,31 +83,31 @@ You can adjust the following parameters to your liking:
 - Unfortunately, the resulting output is extremely wide, because an entire set of armor with its defining legendary attributes is output per row. If you're using MariaDB, add a `\G` immediately after the `LIMIT` to change tabular output to a much easier to read line-oriented output. Example:
 ```
 *************************** 1. row ***************************
-            Teil:
+            Part:
 attrtxt_short_en: [Mutant's]
        part_name: Torso
    attrtxt_1star: +10 Damage Resistance and Energy Resistance if you are mutated
    attrtxt_2star: Hunger and Thirst grow 10% slower
    attrtxt_3star: 5% chance to deal 100 Fire DMG to melee attackers
-            Teil:
+            Part:
 attrtxt_short_en: [Troubleshooter's]
        part_name: Left Arm
    attrtxt_1star: -15% damage from robots
    attrtxt_2star: +25 Cryo Resistance
    attrtxt_3star: Ammo weight reduced by 20%
-            Teil:
+            Part:
 attrtxt_short_en: [Regenerating]
        part_name: Right Arm
    attrtxt_1star: Slowly regenerate health while not in combat
    attrtxt_2star: +25 Fire Resistance
    attrtxt_3star: Receive 15% less limb damage
-            Teil:
+            Part:
 attrtxt_short_en: [Assassin's]
        part_name: Left Leg
    attrtxt_1star: -15% damage from Humans
    attrtxt_2star: +25 Poison Resistance
    attrtxt_3star: Food, drink, and chem weights reduced by 20%
-            Teil:
+            Part:
 attrtxt_short_en: [Bolstering]
        part_name: Right Leg
    attrtxt_1star: Grants up to +35 Energy Resistance and Damage Resistance, the lower your health
