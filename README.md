@@ -1,4 +1,4 @@
-This collection of SQLs should aid a user in selecting a set of pieces from given armor in the Fallout 76 game with the the best possible selection of subjectively most desired so called legendary attributes. Those grant certain more or less helpful additional effects to the player character than just protection from damage.
+This collection of SQLs should aid a user in selecting a set of pieces from given armor in the Fallout 76 game with the best possible selection of subjectively most desired so called legendary attributes. Those grant certain more or less helpful additional effects to the player character than just protection from damage.
 
 The specific reason to come up with this was my discovery that crafting Secret Service Armor parts in Fallout 76 did not consume rare legendary cores, but only one legendary module per crafted part. Parts thus are relatively cheap to create and lightweight enough to keep in my stash box in large amounts. But how to deduce what I perceive the best set of armor with all the attributes I crave the most?
 
