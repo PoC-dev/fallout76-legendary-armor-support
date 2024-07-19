@@ -177,4 +177,4 @@ WHERE torso.attrid_1star <> left_arm.attrid_1star
   AND right_arm.attrid_3star <> right_leg.attrid_3star
   AND left_leg.attrid_3star <> right_leg.attrid_3star
 ORDER BY score DESC
-LIMIT 1\G
+LIMIT 1
