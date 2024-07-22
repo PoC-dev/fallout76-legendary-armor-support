@@ -66,7 +66,7 @@ SELECT attrprio, attrid, attrtxt_en FROM prio_per_user
 - Use >= 200 and < 300 for Tier-2 (2-Star) attributes
 - Use >= 300 and < 400 for Tier-3 (3-Star) attributes
 
-Finally, the run the SQL in *select_parts_set.sql* to evaluate the best set of armor. It is using a mathematical concept called [Cartesian Product](https://en.wikipedia.org/wiki/Cartesian_product) to first explode given data to any possible combination (of armor parts), and subsequently limit the output to one row: The highest scoring set of armor.
+Finally, the run the SQL in *select_parts_set.sql* to evaluate the best set of armor. It is using a mathematical concept called [Cartesian Product](https://en.wikipedia.org/wiki/Cartesian_product) to first explode given data to any possible combination (of armor parts), and subsequently limit the output to one row: The highest scoring set of armor. Note: The *user* clause must be changed to the appropriate user being set in the tables.
 
 Legendary attributes stack. If the player character wears multiple pieces granting the same effect, the effect is stronger. Most often, it's desirable to have as many different high-priority effects as possible instead. This grants a larger number and more diverse range of effects. Thus, if a given legendary effect has already been chosen for a given part, the same effect should be excluded from consideration for subsequent parts, granting parts with lesser effect priority to "bubble up" in the selection process. The last `WHERE` block at the end of the SQL is there to eliminate said duplicates.
 
