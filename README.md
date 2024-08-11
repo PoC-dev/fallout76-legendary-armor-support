@@ -121,7 +121,7 @@ attrtxt_short_en: [Bolstering]
  score_right_leg: 553
            score: 1787
 ```
-Interestingly, SQLite almost instantly outputs the result, while MariaDB chews on the data for nearly 20 seconds before generating any output.
+Interestingly, SQLite almost instantly outputs the result, while MariaDB chews on the data for around 4 seconds before generating any output.
 
 ----
 poc@pocnet.net 2024-07-19

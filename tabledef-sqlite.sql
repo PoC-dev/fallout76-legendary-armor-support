@@ -29,3 +29,4 @@ CREATE TABLE prio_per_user (
   attrid int NOT NULL,
   attrprio int NOT NULL
 );
+CREATE INDEX prio_per_user_idx ON prio_per_user (attrid);
