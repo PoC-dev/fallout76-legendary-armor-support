@@ -57,7 +57,7 @@ FROM
    INNER JOIN attr attr2 ON apu.attrid_2star = attr2.attrid
    INNER JOIN prio_per_user ppu3 ON apu.attrid_3star = ppu3.attrid
    INNER JOIN attr attr3 ON apu.attrid_3star = attr3.attrid
-   WHERE ap.parts_name_en = 'Torso' AND apu.user='poc') torso,
+   WHERE ap.parts_name_en = 'Torso' AND apu.user='poc' AND armor_set=1) torso,
 
   (SELECT ap.parts_name_en AS part_name,
           apu.parts_id AS parts_id,
@@ -79,7 +79,7 @@ FROM
    INNER JOIN attr attr2 ON apu.attrid_2star = attr2.attrid
    INNER JOIN prio_per_user ppu3 ON apu.attrid_3star = ppu3.attrid
    INNER JOIN attr attr3 ON apu.attrid_3star = attr3.attrid
-   WHERE ap.parts_name_en = 'Left Arm' AND apu.user='poc') left_arm,
+   WHERE ap.parts_name_en = 'Left Arm' AND apu.user='poc' AND armor_set=1) left_arm,
 
   (SELECT ap.parts_name_en AS part_name,
           apu.parts_id AS parts_id,
@@ -101,7 +101,7 @@ FROM
    INNER JOIN attr attr2 ON apu.attrid_2star = attr2.attrid
    INNER JOIN prio_per_user ppu3 ON apu.attrid_3star = ppu3.attrid
    INNER JOIN attr attr3 ON apu.attrid_3star = attr3.attrid
-   WHERE ap.parts_name_en = 'Right Arm' AND apu.user='poc') right_arm,
+   WHERE ap.parts_name_en = 'Right Arm' AND apu.user='poc' AND armor_set=1) right_arm,
 
   (SELECT ap.parts_name_en AS part_name,
           apu.parts_id AS parts_id,
@@ -123,7 +123,7 @@ FROM
    INNER JOIN attr attr2 ON apu.attrid_2star = attr2.attrid
    INNER JOIN prio_per_user ppu3 ON apu.attrid_3star = ppu3.attrid
    INNER JOIN attr attr3 ON apu.attrid_3star = attr3.attrid
-   WHERE ap.parts_name_en = 'Left Leg' AND apu.user='poc') left_leg,
+   WHERE ap.parts_name_en = 'Left Leg' AND apu.user='poc' AND armor_set=1) left_leg,
 
   (SELECT ap.parts_name_en AS part_name,
           apu.parts_id AS parts_id,
@@ -145,7 +145,7 @@ FROM
    INNER JOIN attr attr2 ON apu.attrid_2star = attr2.attrid
    INNER JOIN prio_per_user ppu3 ON apu.attrid_3star = ppu3.attrid
    INNER JOIN attr attr3 ON apu.attrid_3star = attr3.attrid
-   WHERE ap.parts_name_en = 'Right Leg' AND apu.user='poc') right_leg
+   WHERE ap.parts_name_en = 'Right Leg' AND apu.user='poc' AND armor_set=1) right_leg
    /* Exclude any duplicate attributes from the resulting set. */
 WHERE torso.attrid_1star <> left_arm.attrid_1star
   AND torso.attrid_1star <> right_arm.attrid_1star
