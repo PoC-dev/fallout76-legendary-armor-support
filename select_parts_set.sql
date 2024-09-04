@@ -1,3 +1,4 @@
+-- This is the main analyzing SQL.
 SELECT '' AS Part,
        torso.attrtxt_short_en,
        torso.part_name,

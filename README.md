@@ -68,7 +68,7 @@ SELECT attrprio, attrid, attrtxt_en FROM prio_per_user
 
 Finally, the run the SQL in *select_parts_set.sql* to evaluate the best set of armor. It is using a mathematical concept called [Cartesian Product](https://en.wikipedia.org/wiki/Cartesian_product) to first explode given data to any possible combination (of armor parts), and subsequently limit the output to one row: The highest scoring set of armor. Note: The *user* clause must be changed to the appropriate user being set in the tables.
 
-Legendary attributes stack. If the player character wears multiple pieces granting the same effect, the effect is stronger. Most often, it's desirable to have as many different high-priority effects as possible instead. This grants a larger number and more diverse range of effects. Thus, if a given legendary effect has already been chosen for a given part, the same effect should be excluded from consideration for subsequent parts, granting parts with lesser effect priority to "bubble up" in the selection process. The last `WHERE` block at the end of the SQL is there to eliminate said duplicates.
+Legendary attributes stack at the time this SQL was developed. If the player character wears multiple pieces granting the same effect, the effect is stronger. Most often, it's desirable to have as many different high-priority effects as possible instead. This grants a larger number and more diverse range of effects. Thus, if a given legendary effect has already been chosen for a given part, the same effect should be excluded from consideration for subsequent parts, granting parts with lesser effect priority to "bubble up" in the selection process. The last `WHERE` block at the end of the SQL is there to eliminate said duplicates.
 
 For SQLite, use:
 ```
@@ -124,4 +124,4 @@ attrtxt_short_en: [Bolstering]
 Interestingly, SQLite almost instantly outputs the result, while MariaDB chews on the data for around 4 seconds before generating any output.
 
 ----
-poc@pocnet.net 2024-07-19
+poc@pocnet.net 2024-09-04
