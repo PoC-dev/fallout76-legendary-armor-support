@@ -1,6 +1,6 @@
 This collection of SQLs should aid a user in selecting a set of pieces from given armor in the Fallout 76 game with the best possible selection of subjectively most desired so called legendary attributes. Those grant certain more or less helpful additional effects to the player character than just protection from damage.
 
-The specific reason to come up with this was my discovery that crafting Secret Service Armor parts in Fallout 76 did not consume rare legendary cores, but only one legendary module per crafted part. Parts thus are relatively cheap to create and lightweight enough to keep in my stash box in large amounts. But how to deduce what I perceive the best set of armor with all the attributes I crave the most?
+The specific reason to come up with this was my discovery that crafting Secret Service Armor parts did not consume rare legendary cores, but only one legendary module per crafted part. Parts thus are relatively cheap to create and lightweight enough to keep in my stash box in large amounts. But how to deduce what I perceive the best set of armor with all the attributes I crave the most?
 
 Well, I'm owning a computer! Let it compute instead of me scratching my head and trying out seemingly random combinations over and over.
 
@@ -14,7 +14,22 @@ Legendary attributes are grouped into primary, secondary and tertiary. This is r
 - Secondary (two stars) attributes have attribute IDs from 200..299
 - Tertiary (three stars) attributes have attribute IDs from 300..399
 
-The set of legendary attributes is randomly assigned to a given piece at acquisition time (crafting/looting). Up to three different sets of over a dozen of attributes for each "star group" provide up to 5700 possible combinations of legendary effects. See here for details: [Fallout-Wiki: Legendary Armor Effects](https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects).
+The set of legendary attributes is randomly assigned to a given piece at acquisition time (crafting/looting). For the Secret Service Armor — which can only be crafted and not found in the world — the number of legendary attributes is also assigned randomly, but biased by the player's luck SPECIAL attribute. It is inherently legendary, there is no "normal" version of it.
+
+Up to three different sets of over a dozen of attributes for each "star group" provide up to 5700 possible combinations of legendary effects. See here for details: [Fallout-Wiki: Legendary Armor Effects](https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects).
+
+### Fallout 76 September 2024 Update
+After this update, the legendary crafting system has seen considerable overhaul. Legendary cores have been discontinued, and crafting Secret Service Armor parts is now consistent with most other legendary parts in the game. They aren't inherently legendary anymore, and applying legendary attributes costs more modules than before the change. But, it's now possible to apply the personally most desired legendary attributes to weapons and armor, if you have obtained the respective legendary module boxes. This comes at a high price, though.
+
+Legendary items can be scrapped. Scrapping yields legendary scrips and raw materials. In addition, it's now possible to obtain legendary module boxes with a certain attribute or to even learn a certain legendary module box plan, by scrapping legendary items. The perceived chance to that is close to zero. The latter even more. But again influenced by the player's luck SPECIAL attribute.
+
+In addition, turning learned legendary module box plans into actual legendary module boxes consumes even more legendary modules, and other more or less rare components. Legendary modules are obtained instead of legendary cores by attending successful public events, and by exchanging legendary script in the Rusty Pick. Hard grinding players are rewarded with learning plans eventually — after having scrapped thousands of legendary pieces, and attending each and every event to farm legendary modules — and already started to sell readymade legendary module boxes for Caps. Time will show how prices will develop.
+
+Finally, applying legendary module boxes to an item also consumes legendary modules, many more than a standard random "roll".
+
+If you have Caps spare, farmed loads of legendary modules, and are patient enough to grind through frequently checking other player's vending machines for your dearest legendary attribute module box, the new system gives you the opportunity to apply *exactly* the most desired legendary attributes to your items.
+
+But it surely requires much less grinding to just obtain the necessary number of legendary modules to create random three star legendary armor pieces — not limited to Secret Service — and to choose which ones give the best result afterwards. With the help of the facilities described below. It's a compromise, but a viable one.
 
 ## Database
 To not overly limit usage to certain platforms, or come up with the need of installing a DBMS, the whole thing is based on Sqlite3, but has been developed and tested with MariaDB 5.5.
@@ -124,4 +139,4 @@ attrtxt_short_en: [Bolstering]
 Interestingly, SQLite almost instantly outputs the result, while MariaDB chews on the data for around 4 seconds before generating any output.
 
 ----
-poc@pocnet.net 2024-09-04
+poc@pocnet.net 2024-09-18
