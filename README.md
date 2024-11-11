@@ -18,14 +18,18 @@ The set of legendary attributes is randomly assigned to a given piece at acquisi
 
 Up to three different sets of over a dozen of attributes for each "star group" provide up to 5700 possible combinations of legendary effects. See here for details: [Fallout-Wiki: Legendary Armor Effects](https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects).
 
+Soe effects might be slightly modified for certain armor classes. A notable example is the Excavator Power Armor, granting not only one but two SPECIAL points for the respective secondary (two star) attributes.
+
 ### Fallout 76 September 2024 Update
 After this update, the legendary crafting system has seen considerable overhaul. Legendary cores have been discontinued, and crafting Secret Service Armor parts is now consistent with most other legendary parts in the game. They aren't inherently legendary anymore, and applying legendary attributes costs more modules than before the change. But, it's now possible to apply the personally most desired legendary attributes to weapons and armor, if you have obtained the respective legendary module boxes. This comes at a high price, though.
 
 Legendary items can be scrapped. Scrapping yields legendary scrips and raw materials. In addition, it's now possible to obtain legendary module boxes with a certain attribute or to even learn a certain legendary module box plan, by scrapping legendary items. The perceived chance to that is close to zero. The latter even more. But again influenced by the player's luck SPECIAL attribute.
 
-In addition, turning learned legendary module box plans into actual legendary module boxes consumes even more legendary modules, and other more or less rare components. Legendary modules are obtained instead of legendary cores by attending successful public events, and by exchanging legendary script in the Rusty Pick. Hard grinding players are rewarded with learning plans eventually — after having scrapped thousands of legendary pieces, and attending each and every event to farm legendary modules — and already started to sell readymade legendary module boxes for Caps. Time will show how prices will develop.
+In addition, crafting legendary module boxes consumes even more legendary modules, and other more or less rare components. Legendary modules are obtained instead of legendary cores by attending successful public events, and by exchanging legendary script in the Rusty Pick. Hard grinding players are rewarded with learning plans eventually — after having scrapped thousands of legendary pieces, and attending each and every event to farm the necessary legendary modules — and already started to sell readymade legendary module boxes for Caps. Time will show how prices will develop.
 
 Finally, applying legendary module boxes to an item also consumes legendary modules, many more than a standard random "roll".
+
+Random assignments followed certain rules about possible combination of attributes. The September 2024 Update removed this restriction to enable players applying any desired combination of attributes. The assignment of attributes to a "star slot" has *not* been removed, though. You still can't assign multiple attributes from the same "star slot".
 
 If you have Caps spare, farmed loads of legendary modules, and are patient enough to grind through frequently checking other player's vending machines for your dearest legendary attribute module box, the new system gives you the opportunity to apply *exactly* the most desired legendary attributes to your items.
 
@@ -136,7 +140,7 @@ attrtxt_short_en: [Bolstering]
  score_right_leg: 553
            score: 1787
 ```
-Interestingly, SQLite almost instantly outputs the result, while MariaDB chews on the data for around 4 seconds before generating any output.
+Interestingly, SQLite almost instantly outputs the result, while MariaDB chews on the data for considerable time before generating any output.
 
 ----
-poc@pocnet.net 2024-09-18
+poc@pocnet.net 2024-11-11
